@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Shoes",
+        "description": "Awesome comfy shoes",
+        "image": "/shoes.jpg",
+        "price": 20
+    
+    },
+    {
+        "title": "laptop",
+        "description": "Super fast laptop",
+        "image": "/laptop.jpg",
+        "price": 850
+    
+    },
+    {
+        "title": "Mobile",
+        "description": "Full feature mobile phone",
+        "image": "/mobile.jpg",
+        "price": 620
+    
+    },
+
+    {
+        "title": "T-Shirt",
+        "description": "Awesome comfy T-Shirt",
+        "image": "/tshirt.jpg",
+        "price": 10
+    
+    }
+
+]
