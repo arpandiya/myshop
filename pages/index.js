@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import product from '../products.json';
+import { initiateCheckout } from '../lib/payments';
 
 export default function Home() {
  
@@ -24,14 +25,25 @@ export default function Home() {
         </p>
         <div className={styles.grid}>
               
-          {product.map(item => {
+          {product.map((item, index) => {
+            const {id, title, image, description, price} = item;
         return( 
-            <a key={item.price}  className={styles.card}>
-            <h2 >{item.title}</h2>
-            <Image src={item.image} alt="shoes" width={300} height={200} />
-            <p>{item.description}</p>
-            <h2>${item.price}</h2>
-            <button>Buy</button>
+            <a key={index}  className={styles.card}>
+            <h2 >{title}</h2>
+            <Image src={image} alt="shoes" width={300} height={200} />
+            <p>{description}</p>
+            <h2>${price}</h2>
+            <p><button onClick={() => {
+              initiateCheckout({
+                lineItems: [
+                  {
+                    price: id,
+                    quantity: 1
+                  }
+                ]
+              }) 
+            }} 
+            className={styles.button}>Buy Now</button></p>
           </a>     )     
         
     })}

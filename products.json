@@ -1,5 +1,6 @@
 [
     {
+        "id": "price_1JfdcuADoE94ZCx1PlNw9xG6",
         "title": "Shoes",
         "description": "Awesome comfy shoes",
         "image": "/shoes.jpg",
@@ -7,6 +8,7 @@
     
     },
     {
+        "id": 2,
         "title": "laptop",
         "description": "Super fast laptop",
         "image": "/laptop.jpg",
@@ -14,6 +16,7 @@
     
     },
     {
+        "id": 3,
         "title": "Mobile",
         "description": "Full feature mobile phone",
         "image": "/mobile.jpg",
@@ -22,6 +25,7 @@
     },
 
     {
+        "id": 4,
         "title": "T-Shirt",
         "description": "Awesome comfy T-Shirt",
         "image": "/tshirt.jpg",

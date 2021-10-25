@@ -122,3 +122,23 @@
     flex-direction: column;
   }
 }
+
+.button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  border: 1px solid rgb(119, 119, 236);
+  color: rgb(54, 32, 153);
+  font-weight: bold;
+}
+
+.button:hover {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #254f94;
+  border: 1px solid rgb(119, 119, 236);
+  cursor: pointer;
+  color: #f1f1f1;
+}
